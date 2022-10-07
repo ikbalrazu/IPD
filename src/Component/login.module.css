@@ -1,0 +1,9 @@
+.ptimaryBtm:hover {
+  background-color: black;
+  color: white;
+}
+
+.ptimaryBtm {
+  background-color: white;
+  color: black;
+}

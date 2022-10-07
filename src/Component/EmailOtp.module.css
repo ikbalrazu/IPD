@@ -1,0 +1,53 @@
+.bgWhite {
+  background: #232323;
+  padding: 10px;
+}
+
+.title {
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #02a5e2;
+}
+.line {
+  color: #0694c9;
+  margin-top: 1rem;
+}
+.customBtn {
+  border-radius: 0px;
+  padding: 10px;
+}
+.otpinput {
+  margin-right: 10px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.resendBtn {
+  color: #ff4569;
+  text-decoration: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.alert_message {
+  padding: 20px;
+  color: #02a5e2;
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+.confirm_set_user_signin_btn {
+  color: #02a5e2;
+}
+
+/* Genarel  */
+
+.mysilt {
+  list-style: none;
+  padding-left: 0;
+}
+.mysilti {
+  padding-right: 15px;
+  color: #00adee;
+}

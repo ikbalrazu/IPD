@@ -1,0 +1,38 @@
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.otpinput{
+    border: 1px solid blue;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.otpinput:focus{
+    outline: none;
+}
+
+.verifybtn{
+    border-radius: 6px;
+    border: 2px solid rgb(182, 185, 181);
+}
+
+.verifybtn:active{
+    background-color: #333;
+}
+
+.resendbtn{
+    border-radius: 6px;
+    margin-left: 5px;
+    border: 2px solid rgb(182, 185, 181);
+}
+
+.resendbtn:active{
+    background-color: #333;
+}
