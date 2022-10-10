@@ -10,7 +10,6 @@ import { Base64 } from "js-base64";
 
 const General = () => {
   const userInfo = JSON.parse(localStorage.getItem("userinfo"));
-  const deals = JSON.parse(localStorage.getItem("dealsinfo"));
   const [alldeals, setAllDeals] = useState([]);
   const [Check, setCheck] = useState(false);
   const [profileInfo,setProfileInfo] = useState();
@@ -30,9 +29,6 @@ const General = () => {
     
   }
 
-  // useEffect(()=>{
-  //   window.location.reload(false);
-  // },[])
 
   useEffect(() => {
     //console.log(userdetails?.data?.data);
@@ -40,8 +36,8 @@ const General = () => {
     // console.log(userdetails?.data?.data?.Email_When_Document_Uploaded);
     const ischecked = (userdetails?.data?.data?.Email_When_Document_Uploaded =="true" )? true:false
     setCheck(ischecked);
-    for (let i = 0; i < deals?.deals?.length; i++) {
-      setAllDeals((preData) => [...preData, deals?.deals[i].display_value]);
+    for (let i = 0; i < userdetails?.data?.data?.Deals_Allowed_for_Access?.length; i++) {
+      setAllDeals((preData) => [...preData, userdetails?.data?.data?.Deals_Allowed_for_Access[i]?.display_value]);
     }
   }, [userdetails]);
 
@@ -206,8 +202,9 @@ const General = () => {
                           <p>
                             {" "}
                             Deals :{" "}
-                            {profileInfo?.Deals_Allowed_for_Access?.map((data, index) => {
-                              return <p>{data?.display_value}</p>;
+                            {/* <button onClick={()=>console.log(alldeals)}>check</button> */}
+                            {alldeals?.map((data, index) => {
+                              return <p>{data}</p>;
                             })}
                           </p>
                         </div>
