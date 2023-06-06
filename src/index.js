@@ -8,10 +8,11 @@ import {AppProvider} from "./context/Context";
 import axios from "axios";
 
 //axios.defaults.baseURL = "http://localhost:5000/w3s/v1";
-axios.defaults.baseURL = "https://investmentportaldemo.herokuapp.com/w3s/v1";
+//axios.defaults.baseURL = "https://investmentportaldemo.herokuapp.com/w3s/v1";
+axios.defaults.baseURL = "https://investmentportaldemo.onrender.com/w3s/v1";
 
 //export const frontendurl = "http://localhost:3000";
-export const frontendurl = "https://investmentportaldemo.netlify.app";
+export const frontendurl = "https://iportaldemo.netlify.app";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
